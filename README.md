@@ -47,8 +47,8 @@ cv2.waitKey(0)
 
 ### b) Display the histogram of gray scale image and any one channel histogram from color image
 ```python
-gray_hist=cv2.calcHist([gray],[0],None,[256],[0,255])
-color_hist=cv2.calcHist([color],[2],None,[256],[0,255])
+gray_hist=cv2.calcHist([gray_image],[0],None,[256],[0,255])
+color_hist=cv2.calcHist([color_image],[2],None,[256],[0,255])
 plt.figure()
 plt.title("GRAY IMAGE")
 plt.xlabel("GRAYSCALE VALUE")
